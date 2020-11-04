@@ -59,8 +59,8 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       sh autogen.sh
        apt-get install libevent-dev
+       sh autogen.sh
        ./configure && make
 
     - name: Perform CodeQL Analysis
